@@ -15,13 +15,13 @@ public class LoginPage{
 
     }
 
-    @FindBy(id ="prependedInput")
+    @FindBy(name ="USER_LOGIN")
     public WebElement usernameInput;
 
-    @FindBy(id= "prependedInput2")
+    @FindBy(name = "USER_PASSWORD")
     public WebElement passwordInput;
 
-    @FindBy(id= "_submit")
+    @FindBy(xpath= "//input[@value='Log In']")
     public WebElement loginBtn;
 
     public void login(String username, String password){
